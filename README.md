@@ -1,9 +1,9 @@
-# Protokoll [![Travis](https://api.travis-ci.org/celsodantas/protokoll.png)](http://travis-ci.org/celsodantas/protokoll) [![Gem Version](https://badge.fury.io/rb/protokoll.svg)](http://badge.fury.io/rb/protokoll)
+#Travis Gem Version Protocol [![Travis](https://api.travis-ci.org/celsodantas/protokoll.png)](http://travis-ci.org/celsodantas/protokoll) [![Gem Version](https://badge.fury.io/rb/protokoll.svg)](http://badge.fury.io/rb/protokoll)
 
 
 ## Description
 
-ravis Gem Version Protocol is a straightforward Rails 4 plugin designed to simplify the management of a custom autoincrement value for a model.
+Travis Gem Version Protocol is a straightforward Rails 4 plugin designed to simplify the management of a custom autoincrement value for a model.
 
 If you need to create an autoincrement information in your database, similar to call center registration numbers (e.g., 2011000001, 2011000002, 20110000003, and so on), this gem is the perfect solution for you! Whether you want to create a custom autoincrement value, this gem has got you covered.
 
