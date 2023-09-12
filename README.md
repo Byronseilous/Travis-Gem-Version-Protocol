@@ -3,11 +3,16 @@
 
 ## Description
 
-Protokoll is a simple Rails 4 pluggin to simplify the management of a custom autoincrement value for a model.
+ravis Gem Version Protocol is a straightforward Rails 4 plugin designed to simplify the management of a custom autoincrement value for a model.
 
-If you want to create an autoincrement information on the database, just like those callcenter registration number (2011000001, 2011000002, 20110000003 and on) this gem is for you! If you want to create just an custom autoincrement value, this gem is for you too! =)
+If you need to create an autoincrement information in your database, similar to call center registration numbers (e.g., 2011000001, 2011000002, 20110000003, and so on), this gem is the perfect solution for you! Whether you want to create a custom autoincrement value, this gem has got you covered.
 
-All those tricky things to control like every month you have to reset the counter are gone! All you have to do is define a String column and let _Protokoll_ handle the rest:
+Say goodbye to the complexities of managing counters, especially when you need to reset them monthly. With Protokoll, all you need to do is define a String column, and it will seamlessly handle the rest for you.
+
+
+
+
+
 
 
 ```ruby
@@ -124,29 +129,7 @@ With it you can reserve a number without the need to save it to the database. Ex
 
 It just increases the counter so any other object that gets saved or uses the #reserve_#{column_name} will get the next available number.
 
-## Installation
 
-Just add to the Gemfile:
-
-```ruby
-gem 'protokoll'
-```
-
-And run _bundle install_ on the Rails application folder
-
-    bundle install
-
-Run the generator
-
-    rails g protokoll:migration
-
-Optional: If scope_by will be used run next generator as well
-
-    rails g protokoll:migration:scope_by
-
-and migrate your database
-
-    rake db:migrate
 
 
 ## Questions & Sugestions
@@ -158,18 +141,3 @@ This piece of software is free to use.
 
 Check the wiki if you are having any issues while upgrading from version `0.x`
 
-### Running tests in Development
-
-You need to clone the project
-
-    git clone git@github.com:celsodantas/protokoll.git
-    cd protokoll
-
-Then  prepare the test database:
-
-    bundle
-    cd test/dummy && rake db:migrate && rake db:test:prepare && cd ../..
-
-Now run the rake test to run the tests:
-
-    rake test
